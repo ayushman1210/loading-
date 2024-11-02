@@ -1,0 +1,59 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    background-color: blueviolet;
+}
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.dots .one{
+    animation: load 0.8s ease  infinite;
+}
+
+.dots .one.first{
+    animation-delay: 0.3s;
+}
+
+.dots .one.second{
+    animation-delay: 0.4s;
+}
+
+.dots .one.third{
+    animation-delay: 0.5s;
+}
+.dots .one.fourth{
+    animation-delay: 0.6s;
+}
+
+.one{
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    display: inline-block;
+    border-radius: 50%;
+    margin: 0px 4px;
+    }
+
+@keyframes load {
+    0%{
+        width: 20px;
+        height: 20px;
+    }
+    50%{
+        width: 15px;
+        height: 15px;
+    }
+    75%{
+        width: 10px;
+        height: 10px;
+    }
+    100%{
+        width: 20px;
+        height: 20px;
+    }
+}
